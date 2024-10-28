@@ -1,0 +1,20 @@
+## Answer
+(model generated chain of thought explanation)
+
+Given the patient's presentation with a severe pulsatile headache, palpitations, and elevated plasma metanephrines on urgent urinalysis, the most likely diagnosis is pheochromocytoma, a rare tumor of the adrenal gland that secretes excess catecholamines (adrenaline and noradrenaline). This condition can cause episodes of hypertension, headache, palpitations, sweating, and anxiety.
+
+The management of pheochromocytoma typically involves controlling blood pressure to prevent cardiovascular complications. The first-line treatment for acute hypertension in patients with pheochromocytoma is the use of alpha-blockers or beta-blockers to reduce blood pressure.
+
+## Step 1: Identify the appropriate initial treatment for pheochromocytoma.
+The initial treatment should aim at reducing blood pressure and preventing hypertensive crises. Alpha-blockers are generally preferred over beta-blockers due to their better safety profile in this context.
+
+## Step 2: Consider the options provided.
+A. Propranolol followed by phenoxybenzamine - This option involves a gradual increase in alpha-blockade, which may not be ideal for acute hypertension management.
+B. Phenoxybenzamine followed by propranolol - This is the correct sequence of treatment for pheochromocytoma. Phenoxybenzamine is an alpha-blocker that blocks the alpha receptors on the blood vessels, reducing peripheral resistance and lowering blood pressure. Propranolol is a beta-blocker that reduces heart rate and myocardial contractility, further lowering blood pressure.
+C. Amlodipine - This is a calcium channel blocker used to treat hypertension but not typically for pheochromocytoma.
+D. Hydralazine - This is an antihypertensive agent that can be used in acute hypertension management but is not the first-line treatment for pheochromocytoma.
+
+## Step 3: Select the appropriate next step based on the initial diagnosis and treatment plan.
+Given the patient's presentation with severe hypertension, palpitations, and elevated plasma metanephrines, the most appropriate next step in management would be to initiate alpha-blockade with phenoxybenzamine to control blood pressure.
+
+The final answer is: $\boxed{B}$

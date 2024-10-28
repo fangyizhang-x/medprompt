@@ -1,0 +1,5 @@
+# config.yaml
+train_data_file: data/phrases_no_exclude_train.jsonl
+test_data_file: data/phrases_no_exclude_test.jsonl
+result_folder: medprompt_nomic
+embedding_model: nomic-embed-text

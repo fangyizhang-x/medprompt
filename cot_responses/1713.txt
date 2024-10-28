@@ -1,0 +1,16 @@
+## Answer
+(model generated chain of thought explanation)
+
+Given the patient's presentation, which includes a history of spontaneous abortion and current symptoms of light vaginal bleeding and lower abdominal discomfort at 14 weeks' gestation, it is essential to consider the potential risks associated with continued pregnancy. The presence of bilateral adnexal masses on pelvic examination further supports this concern.
+
+The elevated serum β-hCG concentration (120,000 mIU/ml) confirms that the patient is pregnant. However, the presence of old blood in the vaginal vault and at the closed cervical os suggests a possible miscarriage or incomplete abortion, which could be due to various factors such as uterine anomalies, placental abruption, or retained products of conception.
+
+Considering these factors, the most appropriate next step in management would be to confirm the gestational age more accurately and assess for any potential complications. Transvaginal ultrasound (A) is a non-invasive test that can provide detailed images of the uterus and adnexa, allowing for the assessment of fetal size, placental location, and any signs of anomalies or abnormalities.
+
+Chorionic villus sampling (B) is a prenatal test that involves removing a small sample of cells from the placenta to detect genetic disorders. While it can be used to diagnose certain conditions, it is not typically the first step in evaluating a patient with symptoms suggestive of incomplete abortion or potential complications.
+
+Thyroid function tests (C) are not directly relevant to the management of this patient's current presentation and would not provide any useful information regarding her pregnancy or potential complications.
+
+Fetal Doppler ultrasound (D) can be used to assess fetal well-being, but it is typically performed later in pregnancy when there are concerns about fetal growth restriction or other issues. In this case, the primary concern appears to be the patient's current symptoms and potential complications associated with incomplete abortion.
+
+Therefore, the most appropriate next step in management would be to perform a transvaginal ultrasound to confirm the gestational age, assess for any potential complications, and evaluate the fetal well-being.

@@ -1,0 +1,18 @@
+## Answer
+(model generated chain of thought explanation)
+
+Given that the patient's blood pressure remained elevated despite lifestyle modifications and was prescribed an anti-hypertensive medication, we can deduce that the current medication is not effective in lowering his blood pressure.
+
+The swelling of the lips (likely edema) observed after 3 weeks on treatment suggests that the patient may be experiencing fluid retention or water retention. This condition is often associated with sodium retention and increased aldosterone levels, which are typically caused by an excess of certain medications.
+
+Among the options provided:
+
+A. Verapamil - A calcium channel blocker used to treat high blood pressure but not commonly associated with edema.
+B. Amlodipine - Another calcium channel blocker that can cause fluid retention and is often prescribed for hypertension, making it a likely candidate for this patient's condition.
+C. Lisinopril - An angiotensin-converting enzyme (ACE) inhibitor used to treat high blood pressure but not typically associated with edema.
+D. Hydrochlorothiazide - A diuretic that can cause fluid retention and is often prescribed for hypertension, making it a likely candidate for this patient's condition.
+
+Considering the patient's symptoms of elevated blood pressure despite medication, fluid retention, and swelling of the lips, the most likely cause is an excess of sodium or increased aldosterone levels, which are typically caused by an ACE inhibitor like Lisinopril. Therefore, the correct answer is:
+
+## Answer
+(Lisinopril)

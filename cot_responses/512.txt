@@ -1,0 +1,16 @@
+## Answer
+(model generated chain of thought explanation)
+
+To answer this question, let's consider the regulation of glycolysis and gluconeogenesis.
+
+Gluconeogenesis is a metabolic pathway that results in the generation of glucose from certain non-carbohydrate carbon substrates such as lactate, glycerol, and glucogenic amino acids. The balance between glycolysis and gluconeogenesis is tightly regulated to maintain blood glucose levels within a narrow range.
+
+One key molecule involved in this regulation is fructose-2,6-bisphosphate (FDB). FDB is a potent activator of the phosphofructokinase-1 (PFK-1) enzyme, which is a key regulatory step in glycolysis. When FDB levels are high, it promotes glycolysis by increasing the activity of PFK-1.
+
+On the other hand, insulin is a hormone that inhibits gluconeogenesis and promotes glycolysis. Insulin binds to its receptors on the surface of cells, triggering a signaling cascade that ultimately leads to the inhibition of enzymes involved in gluconeogenesis.
+
+Fructose-2,6-bisphosphate (C) is an allosteric activator of PFK-1, which means it increases the activity of this enzyme. When FDB levels are high, fructose-2,6-bisphosphate binds to and activates PFK-1, promoting glycolysis.
+
+Acetyl-CoA (D), on the other hand, is a product of fatty acid oxidation and gluconeogenesis. While acetyl-CoA can inhibit gluconeogenesis by inhibiting the activity of key enzymes involved in this pathway, it does not directly promote gluconeogenesis.
+
+Therefore, considering the regulation of glycolysis and gluconeogenesis, increased concentration of fructose-2,6-bisphosphate would promote gluconeogenesis.

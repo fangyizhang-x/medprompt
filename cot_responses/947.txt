@@ -1,0 +1,18 @@
+## Answer
+(model generated chain of thought explanation)
+
+To determine the correct answer, let's break down the information provided and analyze each option in relation to immunity to hepatitis B.
+
+1. **Understanding Hepatitis B Immunity**: The primary markers for immunity to hepatitis B are HBsAg (Hepatitis B surface antigen), HBsAb (Hepatitis B surface antibody), and HBcAb (Hepatitis B core antibody). These antibodies indicate that the individual has been infected with the virus but has either recovered from it or is immune.
+
+2. **HBsAg**: This is a protein on the surface of the hepatitis B virus. Its presence indicates an active infection, as the body is producing new viral particles to infect other cells. However, HBsAg itself does not indicate immunity; rather, its absence (negative result) would suggest that the patient has been infected and is currently recovering.
+
+3. **HBsAb**: This antibody appears after the initial infection and indicates that the individual has developed immunity to the virus. The presence of HBsAb typically signifies recovery from an acute hepatitis B infection or successful vaccination.
+
+4. **HBcAb**: This antibody is associated with the core of the hepatitis B virus and is not directly related to immunity but rather to the body's response to the virus, including the development of antibodies against it.
+
+5. **HBeAg**: This marker indicates high viral replication and infectivity. It does not specifically indicate immunity; rather, its presence suggests that the patient is actively transmitting the virus or has a more severe infection.
+
+Given this information, if the hepatologist elects to perform comprehensive hepatitis B screening in addition to other measures, the serologic marker that would indicate the patient's immunity to the hepatitis B virus is HBsAb. This is because HBsAb directly indicates recovery from an acute infection and successful vaccination, which are markers of immunity.
+
+The final answer is: $\boxed{B}$

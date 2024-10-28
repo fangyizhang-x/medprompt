@@ -1,0 +1,35 @@
+## Answer
+(model generated chain of thought explanation)
+
+To solve this problem, we need to understand the properties of a normal distribution and how they apply to the given data.
+
+First, let's recall that in a normal distribution, about 68% of the values lie within one standard deviation (SD) of the mean. This is known as the 68-95-99.7 rule or empirical rule.
+
+Given:
+- Mean (μ) = 200 mg/dL
+- Standard Deviation (σ) = 50 mg/dL
+
+We want to find out how many people have a cholesterol level less than 300 mg/dL.
+
+To do this, we need to calculate the z-score for 300 mg/dL. The z-score tells us how many standard deviations away from the mean our value is.
+
+z = (X - μ) / σ
+= (300 - 200) / 50
+= 100 / 50
+= 2
+
+Now, we need to find the probability that a randomly selected person has a cholesterol level less than 300 mg/dL. This corresponds to the area under the normal curve to the left of z = 2.
+
+Using a standard normal distribution table (z-table), we look up the z-score of 2 and find the corresponding probability:
+
+P(Z < 2) ≈ 0.9772
+
+This means that about 97.72% of the population has a cholesterol level less than 300 mg/dL.
+
+Since there are 1000 participants in total, to find out how many people have a cholesterol level less than 300 mg/dL, we multiply the total number of participants by the probability:
+
+Number of people with LDL < 300 mg/dL = Total participants × Probability
+= 1000 × 0.9772
+≈ 975
+
+Therefore, the answer is C.

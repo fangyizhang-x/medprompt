@@ -1,0 +1,24 @@
+## Answer
+(model generated chain of thought explanation)
+
+Given the patient's symptoms, past medical history, and examination findings, we can analyze the possible diagnoses as follows:
+
+1. **Overactive Bladder (A)**: While the patient reports waking up 2-3 times per night to void, this symptom alone is not sufficient to diagnose overactive bladder. Overactive bladder typically presents with urgency, frequency, or both, which are not mentioned in the scenario.
+
+2. **Interstitial Cystitis (B)**: This condition is characterized by chronic pelvic pain, pressure, and discomfort that worsens with urination. The patient's symptoms of worsening bladder discomfort relieved by voiding, nocturia, and painful intercourse are consistent with interstitial cystitis. Additionally, the presence of a postvoid residual urine of 25 mL on ultrasound suggests incomplete emptying of the bladder, which is a common finding in interstitial cystitis.
+
+3. **Urinary Retention (C)**: Urinary retention would typically present with a history of difficulty starting or stopping urination, frequency, and urgency, but not necessarily nocturia. The patient's symptoms do not match this diagnosis.
+
+4. **Diabetes Insipidus (D)**: Diabetes insipidus is characterized by excessive thirst and polyuria due to insufficient antidiuretic hormone (ADH) secretion or resistance to ADH. The urinalysis shows normal electrolytes, glucose, ketones, blood, nitrite, leukocyte esterase, and WBCs, making this diagnosis unlikely.
+
+Considering the patient's symptoms, examination findings, and diagnostic results, interstitial cystitis is the most likely diagnosis.
+
+## Answer Explanation
+The key points that led to this conclusion include:
+
+- The patient's symptoms of worsening bladder discomfort relieved by voiding, nocturia, and painful intercourse.
+- The presence of a postvoid residual urine of 25 mL on ultrasound, indicating incomplete emptying of the bladder.
+- Normal urethra and bladder mucosa during cystoscopy.
+- Clear urinalysis with normal electrolytes, glucose, ketones, blood, nitrite, leukocyte esterase, and WBCs.
+
+These findings are consistent with interstitial cystitis.

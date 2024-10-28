@@ -1,0 +1,20 @@
+## Step 1: Understand the context and the question
+The question is about how the performance of a new Lyme disease assay would change when it is tested in Southern California compared to its performance in Maine, where it has been extensively tested.
+
+## Step 2: Recall the definitions of negative likelihood ratio (LR) and positive likelihood ratio (LR)
+- The negative likelihood ratio (NLR) is the ratio of the probability of a negative test result given that the patient does not have the disease to the probability of a negative test result given that the patient actually has the disease.
+- The positive likelihood ratio (PLR) is the ratio of the probability of a positive test result given that the patient does not have the disease to the probability of a positive test result given that the patient actually has the disease.
+
+## Step 3: Analyze how testing in Southern California would affect NLR
+Testing in Southern California would introduce new, untested populations. Since the assay is being tested in a different geographic area with potentially different demographics and prevalence rates compared to Maine, it's reasonable to assume that the assay might not generalize well across these differences.
+
+## Step 4: Analyze how testing in Southern California would affect PLR
+The PLR measures the ratio of true positives to false positives. If the assay is less sensitive (i.e., more likely to produce false positive results) in Southern California compared to Maine, this could lead to a decrease in the PLR.
+
+## Step 5: Consider how these changes might impact the overall performance of the assay
+Given that both NLR and PLR are influenced by the sensitivity and specificity of the test, any change in one would likely affect the other. However, since we're comparing two different populations (Maine vs. Southern California), the most direct effect would be on the PLR.
+
+## Step 6: Choose the correct answer based on the analysis
+Given that testing in Southern California would likely decrease the positive likelihood ratio of the Lyme disease assay due to potential false positives from a less sensitive test, this is the most accurate choice.
+
+The final answer is: C

@@ -1,0 +1,20 @@
+## Answer
+(model generated chain of thought explanation)
+
+The patient's symptoms and physical examination findings suggest that the projectile vomiting containing food but no bile is indicative of a pseudocyst, which is a common complication of acute pancreatitis.
+
+Firstly, the fact that the pain travels to the back and is less severe when leaning forward suggests that there may be an obstruction or a mass effect in the upper abdomen. This is consistent with the development of a pseudocyst.
+
+The presence of visible peristalsis from left to right in the upper abdomen further supports this diagnosis, as pseudocysts typically have a wall of muscle and fibrous tissue that can cause movement and contractions.
+
+Given these findings, the next best step in management would be to relieve the obstruction caused by the pseudocyst. This is where endoscopic drainage comes into play.
+
+Endoscopic drainage involves using an endoscope (a flexible tube with a camera and instruments) to insert into the upper abdomen through the mouth or nose. The endoscope is then guided to the area of the pseudocyst, where it can be aspirated or drained of its contents. This can help relieve the obstruction and reduce symptoms.
+
+The other options are not appropriate in this scenario:
+
+* Option A is incorrect because a pseudocyst will not resolve spontaneously without intervention.
+* Option B (octreotide infusion) may be used to manage certain complications of pancreatitis, but it is not the best next step for a patient with a developing pseudocyst.
+* Option C (external percutaneous drainage) is also not appropriate as it involves inserting a tube into the body through the skin, which is not necessary in this case.
+
+Therefore, the correct answer is D. Endoscopic drainage.

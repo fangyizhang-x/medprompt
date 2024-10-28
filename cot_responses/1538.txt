@@ -1,0 +1,14 @@
+## Answer
+(model generated chain of thought explanation)
+
+To determine where collagen synthesis occurs extracellularly, let's analyze each step in the process:
+
+1. **Glycosylation of pro-α chains (A)**: This is a crucial step that occurs within the cell, specifically in the endoplasmic reticulum (ER), where glycosyltransferases add carbohydrate molecules to the growing collagen chain. Therefore, this step does not occur extracellularly.
+
+2. **Cleavage of procollagen C- and N-terminals (B)**: This process also occurs within the cell, specifically in the ER or Golgi apparatus, where proteolytic enzymes cleave the procollagen molecule into its mature forms. Thus, this step does not occur extracellularly.
+
+3. **Triple-helix formation (C)**: The triple helix structure of collagen is formed during the synthesis process within the cell, specifically in the ER and Golgi apparatus. This structural form is crucial for the stability and strength of the final collagen molecule. Therefore, this step occurs intracellularly.
+
+4. **Translation of pro-α chains (D)**: Translation of mRNA into protein occurs on ribosomes, which are found outside the cell, specifically in the cytoplasm. Since pro-α chains are synthesized within the cell, translation does not occur extracellularly.
+
+Therefore, based on this analysis, the step that occurs extracellularly is **C. Triple-helix formation**.

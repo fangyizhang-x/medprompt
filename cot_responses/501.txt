@@ -1,0 +1,28 @@
+## Answer
+(model generated chain of thought explanation)
+
+First, let's consider what we know about the relationship between socioeconomic status (SES) and IQ scores.
+
+1. Historically, IQ scores have been reported to be distributed normally with a mean of 100 and a standard deviation of 15.
+2. This means that most people are expected to score around 100 on an IQ test.
+3. However, there is evidence to suggest that SES can affect IQ scores, although the relationship is complex and influenced by many factors.
+
+Now, let's consider what happens when we increase the sample size from 300 to 2000 participants:
+
+1. With a larger sample size, we are more likely to detect small effects of SES on IQ scores.
+2. This is because a larger sample size provides more precise estimates of the population parameters (mean and standard deviation).
+3. As a result, we may be able to identify relationships between SES and IQ scores that were not apparent with a smaller sample size.
+
+Given these considerations, let's evaluate the answer choices:
+
+A. Decrease in standard deviation: Increasing the sample size will actually increase the precision of our estimates, which means that the standard deviation will decrease.
+
+B. Decrease in standard error of the mean: The standard error of the mean (SEM) is a measure of how much the sample mean deviates from the population mean. With a larger sample size, we get more precise estimates of both the population mean and the standard deviation, which means that our SEM will decrease.
+
+C. Increase in risk of systematic error: Systematic error occurs when there is a consistent bias in the data collection process. Increasing the sample size reduces the impact of systematic errors because it provides more representative samples.
+
+D. Increase in probability of type II error: Type II error occurs when we fail to detect an effect that exists in the population. With a larger sample size, we are more likely to detect small effects of SES on IQ scores, which means that our power to detect an effect increases.
+
+Therefore, the most likely outcome is:
+
+The final answer is: B

@@ -1,0 +1,12 @@
+## Answer
+(model generated chain of thought explanation)
+
+The physician has identified a critical need for an opioid substitute that can be used within a supervised rehabilitation program to help alleviate withdrawal symptoms, and further emphasized the importance of not self-administering it in emergency situations related to heroin withdrawal. This scenario points towards the use of methadone.
+
+Methadone is a long-acting opioid agonist that has been widely used as an opioid substitute for several decades. It is commonly prescribed in supervised rehabilitation programs for individuals struggling with opioid addiction, including those who have attempted to quit using opioids like heroin but are experiencing withdrawal symptoms. Methadone works by binding to opioid receptors in the brain and reducing cravings and withdrawal symptoms.
+
+Methadone does not produce the same euphoric effects as heroin and is less likely to be abused compared to other opioids. It can also be used to treat pain, particularly for patients who have developed tolerance or dependence on opioids due to chronic pain. Furthermore, methadone maintenance therapy (MMT) has been shown to reduce the risk of relapse when combined with counseling and behavioral support.
+
+In contrast, codeine is a weaker opioid that is often prescribed for mild pain but is not typically used as an opioid substitute in the context described by the physician. Clonidine is an alpha-2 adrenergic agonist primarily used to treat hypertension and ADHD, and it does not have the same potential for abuse or dependence as methadone. Naloxone is an opioid antagonist that can reverse opioid overdose but is not a substitute itself.
+
+Therefore, considering the need for a supervised rehabilitation program with an opioid substitute that can help alleviate withdrawal symptoms without causing harm in emergency situations, methadone is the most likely drug recommended by the physician.

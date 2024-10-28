@@ -1,0 +1,18 @@
+## Answer
+(model generated chain of thought explanation)
+
+To answer this question, let's consider the development and anatomy of the kidney.
+
+1. **Understanding the context**: The infant died due to severe respiratory distress, which suggests a problem with the kidneys' ability to concentrate urine or manage fluid balance.
+2. **Identifying key structures involved in kidney development**:
+   - **Mesonephros (A)**: This is an intermediate stage of kidney development that typically disappears before birth. It's not directly responsible for the formation of the collecting ducts.
+   - **Paramesonephric duct (B)**: Also known as the Müllerian duct, this structure primarily gives rise to the female reproductive system and some parts of the urinary system, but it's not involved in kidney development.
+   - **Metanephric mesenchyme (C)**: This is a critical component in the formation of the nephrons, which are the functional units of the kidneys. The metanephric mesenchyme gives rise to the renal tubules and collecting ducts.
+   - **Ureteric bud (D)**: This structure plays a crucial role in the development of the collecting ducts by forming the ureters and then branching into the collecting ducts, which eventually form the nephrons.
+
+Given that the left kidney is selectively lacking cortical and medullary collecting ducts, it suggests an issue with the formation or development of these structures. The **ureteric bud** is directly involved in this process as it gives rise to the collecting ducts within the kidneys.
+
+Therefore, considering the developmental origin of the renal collecting ducts, the answer is:
+
+## Answer
+(D) Ureteric bud

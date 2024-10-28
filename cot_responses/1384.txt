@@ -1,0 +1,22 @@
+## Answer
+(model generated chain of thought explanation)
+
+The patient presents with amenorrhea, dull right-sided lower abdominal pain radiating to the rectum, and a non-tender, mobile adnexal mass on rectal examination. These symptoms are suggestive of a possible ovarian torsion or an ovarian cyst, among other possibilities.
+
+Firstly, let's consider the options one by one:
+
+A. No imaging is indicated for this patient because the diagnosis can be made on the basis of the clinical examination.
+- This option is incorrect because while clinical examination may not provide definitive evidence in some cases, it is often insufficient to diagnose ovarian torsion or cysts.
+
+B. A transvaginal ultrasound would provide a better resolution of the suspected pathology, but a transabdominal ultrasound can still be used to assess this patient.
+- This option is incorrect because while transvaginal ultrasound may not be as sensitive for certain types of masses (e.g., ovarian torsion), it can still provide useful information about the adnexal region.
+
+C. Increased anterior abdominal wall adiposity does not pose any problems with a full urinary bladder, so a transabdominal ultrasound will provide the same sensitivity as a transvaginal ultrasound.
+- This option is incorrect because increased abdominal wall adiposity can indeed affect the accuracy of ultrasound imaging, particularly for assessing the size and location of masses.
+
+D. Pelvic MRI is warranted in this case because transvaginal ultrasound cannot be performed and transabdominal ultrasound is unlikely to provide any diagnostic information.
+- This option is correct because ovarian torsion or cysts may not be easily visualized on a transvaginal ultrasound, especially if the patient has a full bladder. A pelvic MRI would be more sensitive for detecting these conditions.
+
+Therefore, considering the clinical presentation and the limitations of available imaging modalities in this case, the best management plan for this patient is to perform a pelvic MRI to evaluate for ovarian torsion or cysts.
+
+The final answer is: D

@@ -1,0 +1,14 @@
+## Answer
+(model generated chain of thought explanation)
+
+Given the clinical presentation of frequent epistaxis, mucous membrane bleeding, diffuse petechiae on the distal extremities, and a normal platelet count with absent GIIb/IIIa receptors on platelet surfaces, we can analyze the options as follows:
+
+- **Thrombotic Thrombocytopenic Purpura (TTP)**: TTP is characterized by thrombocytopenia, microangiopathic hemolytic anemia, renal failure, and neurological symptoms. The absence of GIIb/IIIa receptors on platelets does not support this diagnosis.
+
+- **Bernard-Soulier Disease**: This condition is characterized by large platelet size (macrothrombocytosis), thrombocytopenia, and a deficiency in the glycoprotein Ib-IX-V complex. The absence of GIIb/IIIa receptors on platelets does not match Bernard-Soulier disease.
+
+- **Idiopathic Thrombocytopenic Purpura (ITP)**: ITP is characterized by thrombocytopenia, often with a normal platelet count, and the presence of petechiae. The absence of GIIb/IIIa receptors on platelets does not support this diagnosis.
+
+- **Glanzmann’s Thrombasthenia**: This condition is characterized by platelet dysfunction leading to impaired aggregation in response to collagen and other agonists. The most notable feature of Glanzmann's thrombasthenia is the absence or deficiency of GIIb/IIIa receptors on platelets, which impairs platelet aggregation. This matches the clinical presentation provided.
+
+Therefore, considering the combination of diffuse petechiae, frequent epistaxis, mucous membrane bleeding, and a normal platelet count with absent GIIb/IIIa receptors, Glanzmann’s thrombasthenia is the most likely diagnosis.

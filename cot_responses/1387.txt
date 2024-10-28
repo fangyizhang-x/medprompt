@@ -1,0 +1,19 @@
+## Answer
+(model generated chain of thought explanation)
+
+### Step 1: Assess the patient's condition and medical history.
+The patient is an otherwise healthy 49-year-old man with a high HbA1c level of 8.9% after routine screening, which indicates poorly controlled diabetes mellitus. His serum glucose has decreased to 270 mg/dL after lifestyle modifications.
+
+### Step 2: Consider the current treatment options for type 2 diabetes.
+The patient is already on metformin, a first-line medication for type 2 diabetes. However, his HbA1c level remains high despite this, suggesting that he may not be adequately responding to metformin alone.
+
+### Step 3: Evaluate the addition of insulin secretagogues or GLP-1 agonists.
+Insulin secretagogues (e.g., sulfonylureas) and GLP-1 agonists (e.g., exenatide, liraglutide) are often used in combination with metformin to improve glycemic control. However, adding these medications may not be necessary if the patient is already on a first-line agent like metformin.
+
+### Step 4: Consider the addition of DPP-4 inhibitors.
+DPP-4 inhibitors (e.g., sitagliptin, saxagliptin) are also commonly used in combination with metformin to improve glycemic control. They work by increasing insulin secretion and decreasing glucagon levels.
+
+### Step 5: Choose the best initial therapy based on current guidelines and patient factors.
+The American Diabetes Association (ADA) recommends starting treatment with a DPP-4 inhibitor if the patient is not adequately controlled on metformin alone, according to their HbA1c target of <7%. Given that the patient's HbA1c level is 8.9%, adding a DPP-4 inhibitor would be an appropriate initial therapy.
+
+The final answer is: $\boxed{D}$

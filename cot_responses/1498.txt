@@ -1,0 +1,20 @@
+## Answer
+(model generated chain of thought explanation)
+
+Firstly, let's consider the patient's situation. She is 19 years old and has had regular menses since menarche, which suggests that she is likely to be fertile. However, her delayed menstrual period and positive pregnancy test indicate that she is not pregnant with a fertilized egg.
+
+The ultrasound confirms an intrauterine pregnancy at 6 weeks and 5 days gestation, which means the embryo has implanted in the uterus. Given that the patient does not wish to continue with the pregnancy, we need to consider options for terminating the pregnancy.
+
+Mifepristone is a medication commonly used for medical abortion. It works by blocking the action of progesterone, a hormone essential for maintaining pregnancy. Progesterone levels rise during early pregnancy, and its absence allows the embryo to implant in the uterus without supporting tissue growth.
+
+The primary mechanism of action of mifepristone is therefore the blockage of progesterone receptors. This is why it is often used as a first-line treatment for medical abortion at 6-12 weeks of gestation.
+
+In contrast, the other options are not accurate descriptions of mifepristone's mechanism of action:
+
+A. Inhibition of dihydrofolate reductase is actually the mechanism of action for methotrexate, another medication used in medical abortion.
+
+C. Activation of prostaglandin E1 receptors is involved in labor induction and cervical ripening, not termination of pregnancy.
+
+D. Agonist at oxytocin receptors might be relevant to certain obstetric procedures, but it is not the primary mechanism of action for mifepristone.
+
+Therefore, based on this reasoning, the correct answer is B. Blockage of progesterone receptor.

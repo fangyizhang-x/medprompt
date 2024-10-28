@@ -1,0 +1,20 @@
+## Answer
+(model generated chain of thought explanation)
+
+Given the patient's symptoms and examination findings, let's analyze the situation step by step:
+
+1. **Symptoms**: The patient reports inability to see from either eye (diplopia) and cannot move his arms (weakness or paralysis). These symptoms suggest a problem with the visual pathways in the brain.
+
+2. **Physical Examination Findings**: Bilaterally equal, reactive pupils are noted, which indicates that there is no significant neurological deficit affecting the autonomic nervous system's control over pupil size.
+
+3. **Fundoscopy and MRI Findings**: The fundoscopy shows no abnormalities, suggesting that there is no retinal or optic nerve issue. However, the MRI of the brain reveals wedge-shaped cortical infarcts in both occipital lobes. This finding is crucial as it points towards a problem with the visual pathways.
+
+4. **Possible Causes**:
+   - **A. Lipohyalinosis**: This condition involves the deposition of hyaline material within the walls of blood vessels, which can lead to ischemic changes in the brain. While it could potentially cause some neurological symptoms, it is less likely to be directly related to the visual pathway.
+   - **B. Cardiac Embolism**: A cardiac embolism occurs when a blood clot forms in the heart and travels to another part of the body, often causing an ischemic stroke. However, the patient's symptoms do not suggest that the embolism is affecting the brain's visual pathways directly.
+   - **C. Atherothrombosis**: This refers to the formation of blood clots within the arteries due to atherosclerosis. While it can cause strokes, the specific location of the infarcts (wedge-shaped in both occipital lobes) and the absence of other neurological deficits make this less likely.
+   - **D. Systemic Hypotension**: This condition involves low blood pressure throughout the body. It can lead to decreased cerebral perfusion pressure, which may cause ischemia in specific areas of the brain, including the visual pathways.
+
+Considering these factors, the most plausible explanation for the patient's current symptoms is systemic hypotension, as it could lead to ischemic changes in the occipital lobes due to reduced blood flow and oxygenation. This would result in the observed wedge-shaped cortical infarcts without affecting the autonomic nervous system or causing other neurological deficits.
+
+The final answer

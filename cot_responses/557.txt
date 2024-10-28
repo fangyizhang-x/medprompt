@@ -1,0 +1,14 @@
+## Answer
+(model generated chain of thought explanation)
+
+To solve this problem, we need to understand how each diabetic pharmacological agent works and its interaction with the gut enzyme that breaks down sucrose into glucose.
+
+1. **Glyburide**: This is a sulfonylurea used in the treatment of type 2 diabetes. It stimulates insulin release from the pancreatic beta cells by binding to and activating the glucagon-like peptide-1 (GLP-1) receptor, which leads to increased insulin secretion. However, glyburide does not directly inhibit the gut enzyme that breaks down sucrose into glucose.
+
+2. **Metformin**: This is a biguanide used in the treatment of type 2 diabetes. It works by decreasing glucose production in the liver and increasing insulin sensitivity. Metformin also inhibits the activity of the intestinal enzyme sucrase-isomaltase, which breaks down sucrose into glucose and fructose. By inhibiting this enzyme, metformin prevents the formation of glucose from sucrose.
+
+3. **Acarbose**: This is an alpha-glucosidase inhibitor used in the treatment of type 2 diabetes. It works by preventing the breakdown of carbohydrates (such as sucrose) into glucose and fructose in the small intestine. By inhibiting this enzyme, acarbose delays carbohydrate absorption and reduces postprandial glucose levels.
+
+4. **Exenatide**: This is a glucagon-like peptide-1 (GLP-1) receptor agonist used in the treatment of type 2 diabetes. It works by enhancing insulin secretion, suppressing glucagon release, and slowing gastric emptying. Exenatide does not directly inhibit the gut enzyme that breaks down sucrose into glucose.
+
+Given this understanding, when metformin is added before the addition of the gut enzyme to the sucrose solution, it will maintain a reading of 0 mg/dL because it inhibits the activity of sucrase-isomaltase, preventing the formation of glucose from sucrose. This matches option B.
