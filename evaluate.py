@@ -13,11 +13,27 @@ import sys
 import numpy as np
 from sklearn.neighbors import NearestNeighbors
 import random
-from multiprocessing import Process
 
 
 class Inferencer():
     def __init__(self, configs):
+        """
+        Constructor for Inferencer.
+
+        Parameters
+        ----------
+        configs : dict
+            A dictionary containing configuration parameters.
+            The dictionary should contain the following keys:
+            - test_data_file: the file name of the test data file
+            - result_folder: the name of the folder where the preprocessed data was saved
+            - embedding_model: the name of the embedding model to use (e.g. "all-minilm:22m")
+            - eval_types: a list of strings, each of which can be either "kNN_few_shot_cot", "few_shot_cot", "few_shot", or "zero_shot"
+
+        Returns
+        -------
+        None
+        """
         self.test_data_fn = configs["test_data_file"]
         self.result_folder = configs["result_folder"]
         assert os.path.exists(self.result_folder), "!!! Result folder does not exist, Please run preprocessing.py first !!!"
@@ -31,9 +47,21 @@ class Inferencer():
         self.eval_types = configs["eval_types"]
 
     def infer(self):
+        """
+        Perform inference on the test samples.
+
+        Parameters
+        ----------
+        None
+
+        Returns
+        -------
+        None
+        """
         self.test_samples = self.load_data()
         self.n_test_samples = len(self.test_samples)
         self.filtered_qa_dict = read_jsonl_file(self.cot_json_fn_filtered_with_embeddings)
+        print(">>> Loaded {} examples".format(len(self.filtered_qa_dict)))
         self.random_few_shot_examples = random.sample(self.filtered_qa_dict, 5)
         self.intialize_knn()
         for i in range(len(self.eval_types)):
@@ -55,29 +83,55 @@ class Inferencer():
         
     # Load data with necessary filtering
     def load_data(self):
+        """
+        Load data with necessary filtering
+
+        Parameters
+        ----------
+        None
+
+        Returns
+        -------
+        list
+            List of dictionaries, where each dictionary contains the data for a single sample.
+        """
         data = read_jsonl_file(self.test_data_fn)
-        # data = data[:10]
         print(">>> Loaded {} test samples".format(len(data)))
 
         return data
     
     def intialize_knn(self):
+        
+        """
+        Initializes and trains a k-Nearest Neighbors (kNN) model using the precomputed embeddings.
+
+        Parameters
+        ----------
+        None
+
+        Returns
+        -------
+        None
+        """
         # Extract embeddings and keep track of indices
         embeddings = np.array([d["embedding"] for d in self.filtered_qa_dict])
-        # indices = list(range(len(self.filtered_qa_dict))) # No need
 
         # Train KNN model
         self.knn = NearestNeighbors(n_neighbors=3, algorithm='auto', metric='cosine', n_jobs=-1).fit(embeddings)
 
     def shuffle_option_labels(self, answer_options):
         """
-        Shuffles the options of the question.
-        
-        Parameters:
-        answer_options (dict): A dictionary with the options.
+        Shuffle the labels of the answer options.
 
-        Returns:
-        dict: A new dictionary with the shuffled options.
+        Parameters
+        ----------
+        answer_options : dict
+            A dictionary containing the answer options to be shuffled.
+
+        Returns
+        -------
+        dict
+            A dictionary with shuffled answer options and corresponding labels.
         """
         options = list(answer_options.values())
         random.shuffle(options)
@@ -87,11 +141,22 @@ class Inferencer():
         return shuffled_options_dict
 
     def kNN_few_shot_cot_ensemble(self):
+        """
+        Evaluate the model using the k-Nearest Neighbors (kNN) model as a way to generate few-shot prompts with shuffled options.
+        
+        Parameters
+        ----------
+        None
+        
+        Returns
+        -------
+        None
+        """
         for question in tqdm(self.test_samples, colour ="green"):
             question_variants = []
             prompt_variants = []
             cot_responses = []
-            question_embedding = get_embedding(question["question"])
+            question_embedding = get_embedding(question["question"], model=self.embedding_model)
             distances, top_k_indices = self.knn.kneighbors([question_embedding], n_neighbors=5)
             top_k_dicts = [self.filtered_qa_dict[i] for i in top_k_indices[0]]
             question["outputs"] = []
@@ -120,10 +185,22 @@ class Inferencer():
                 else:
                     cot = ""
                     pred_ans = ""
-                        
+                
+                # TODO: Change to use answer_idx, no need to do the mapping between answer and answer_idx
                 question["outputs"].append({"question": question_sample["question"], "options": question_sample["options"], "cot": cot, "pred_ans": question_sample["options"].get(pred_ans, "")})
 
     def post_process_ensemble(self):
+        """
+        Post process the output of the kNN few shot prompt ensemble model.
+
+        Parameters
+        ----------
+        None
+
+        Returns
+        -------
+        None
+        """
         ctr = 0 
         for idx,item in enumerate(self.test_samples):
             pred_ans = [x["pred_ans"] for x in item["outputs"]]
@@ -137,6 +214,7 @@ class Inferencer():
             
             item["final_prediction"] = final_prediction
 
+            # TODO: Change to use answer_idx, no need to do the mapping between answer and answer_idx
             if final_prediction == item["answer"]:
                 ctr += 1
 
@@ -147,9 +225,26 @@ class Inferencer():
         write_jsonl_file(self.final_processed_test_set_responses_medprompt, self.test_samples)
 
     def kNN_few_shot_cot(self):
+        """
+        Perform k-Nearest Neighbors (kNN) based few-shot chain-of-thought (CoT) inference.
+
+        This method processes each test sample by finding its k nearest neighbors using precomputed
+        embeddings. It then generates a prompt using these neighbors and a system prompt to obtain
+        a response from a language model. The response is parsed to extract the predicted answer and
+        chain of thought. The predicted answer is compared against the true answer index, and the
+        accuracy of predictions is calculated.
+
+        Parameters
+        ----------
+        None
+
+        Returns
+        -------
+        None
+        """
         ctr = 0
         for question in tqdm(self.test_samples, colour ="green"):
-            question_embedding = get_embedding(question["question"])
+            question_embedding = get_embedding(question["question"], model=self.embedding_model)
             distances, top_k_indices = self.knn.kneighbors([question_embedding], n_neighbors=5)
             top_k_dicts = [self.filtered_qa_dict[i] for i in top_k_indices[0]]
     
@@ -176,6 +271,22 @@ class Inferencer():
         write_jsonl_file(self.test_set_responses_kNN_few_shot_cot_fn, self.test_samples)
 
     def few_shot_cot(self):
+        """
+        Perform few-shot chain-of-thought (CoT) inference.
+
+        This method processes each test sample by generating a prompt using random few-shot examples
+        and a system prompt to obtain a response from a language model. The response is parsed to
+        extract the predicted answer and chain of thought. The predicted answer is compared against
+        the true answer index, and the accuracy of predictions is calculated.
+
+        Parameters
+        ----------
+        None
+
+        Returns
+        -------
+        None
+        """
         ctr = 0
         for item in tqdm(self.test_samples):
             messages = build_few_shot_prompt(system_prompt, item, self.random_few_shot_examples, include_cot=True)
@@ -200,6 +311,22 @@ class Inferencer():
         write_jsonl_file(self.test_set_responses_few_shot_cot_fn, self.test_samples)
 
     def few_shot(self):
+        """
+        Perform few-shot inference without chain-of-thought (CoT) explanations.
+
+        This method processes each test sample by generating a prompt using random few-shot examples
+        and a system prompt to obtain a response from a language model. The response is parsed to
+        extract the predicted answer. The predicted answer is compared against the true answer index,
+        and the accuracy of predictions is calculated.
+
+        Parameters
+        ----------
+        None
+
+        Returns
+        -------
+        None
+        """
         ctr = 0
         for item in tqdm(self.test_samples):
             messages = build_few_shot_prompt(system_zero_shot_prompt, item, self.random_few_shot_examples, include_cot=False)
@@ -218,6 +345,22 @@ class Inferencer():
 
 
     def zero_shot(self):
+        """
+        Perform zero-shot inference without few-shot examples or chain-of-thought (CoT) explanations.
+
+        This method processes each test sample by generating a prompt using a system prompt to obtain
+        a response from a language model. The response is parsed to extract the predicted answer. The
+        predicted answer is compared against the true answer index, and the accuracy of predictions is
+        calculated.
+
+        Parameters
+        ----------
+        None
+
+        Returns
+        -------
+        None
+        """
         ctr = 0
         for item in tqdm(self.test_samples):
             messages = build_zero_shot_prompt(system_zero_shot_prompt, item)
@@ -253,17 +396,3 @@ if __name__ == "__main__":
 
     inferer = Inferencer(configs)
     inferer.infer()
-
-    # processes = []
-    # # Create and start multiple processes
-    # for i in range(10):  # Change the range to create more or fewer processes
-    #     p = Process(target=inferer.infer())
-    #     processes.append(p)
-    #     p.start()
-
-    # # Wait for all processes to complete
-    # for p in processes:
-    #     p.join()
-
-    # print('All workers have finished.')
-    

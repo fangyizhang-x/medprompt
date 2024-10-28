@@ -22,7 +22,7 @@ class PreProcessor:
             The dictionary should contain the following keys:
             - train_data_file: the file name of the training data file
             - result_folder: the name of the folder where the preprocessed data will be saved
-            - embedding_model: the name of the embedding model to use (e.g. "text-embedding-ada-002")
+            - embedding_model: the name of the embedding model to use (e.g. "all-minilm:22m")
 
         Returns
         -------
@@ -38,28 +38,44 @@ class PreProcessor:
 
     def preprocess(self):
         """
-        This function is the main entry point for preprocessing data. It loads data and 
-        generates CoT responses for all samples in the data. It also filters out samples 
-        whose predicted answer does not match the actual answer and embeds the questions in 
-        the filtered data. The preprocessed data is saved as a jsonl file in the specified 
-        folder. The function will not re-run the entire preprocessing process if the output 
-        file already exists. It will simply load the preprocessed data from the output file.
+        Preprocess the data by first generating chain of thought (CoT) responses for each data sample,
+        then filtering out the samples with incorrect predicted answers and embedding the questions.
+
+        If the CoT responses file does not exist, generate the CoT responses and save them to a file.
+        If the file with filtered and embedded questions does not exist, filter out the samples with incorrect
+        predicted answers and embed the questions, then save the results to a file.
+
+        Parameters
+        ----------
+        None
+
+        Returns
+        -------
+        None
         """
         if not os.path.exists(self.cot_json_fn):
             data = self.load_data()
             qa_dict = self.generate_cots(data)
-        else:
-            if not os.path.exists(self.cot_json_fn_filtered_with_embeddings):
-                qa_dict = read_jsonl_file(self.cot_json_fn)
-                self.filtered_qa_dict = self.filter_questions(qa_dict)
-                self.embed_questions()
+            self.filtered_qa_dict = self.filter_questions(qa_dict)
+            self.embed_questions()
+        elif not os.path.exists(self.cot_json_fn_filtered_with_embeddings):
+            qa_dict = read_jsonl_file(self.cot_json_fn)
+            self.filtered_qa_dict = self.filter_questions(qa_dict)
+            self.embed_questions()
 
     # Load data with necessary filtering
     def load_data(self):
         """
-        Loads data from the specified file and performs necessary filtering on the data.
+        Load data with necessary filtering
 
-        :return: A list of dictionaries, where each dictionary represents a sample in the data.
+        Parameters
+        ----------
+        None
+
+        Returns
+        -------
+        list
+            List of dictionaries, where each dictionary contains the data for a single sample.
         """
         data = read_jsonl_file(self.data_fn)
 
@@ -73,22 +89,30 @@ class PreProcessor:
     # Generate chain of thoughts and answers
     def generate_cots(self, data):
         """
-        Generates chain of thought (CoT) responses for each data sample and saves the results.
+        Generate chain of thought (CoT) responses for each data sample and save the results.
 
-        This function processes each item in the given data by building a prompt and obtaining a response
-        from a specified model. The response is parsed to extract the chain of thought and predicted answer.
-        The results are saved to a file, and a list of dictionaries with the processed information is returned.
+        This method processes each item in the provided data by constructing a prompt and retrieving a response
+        from a specified model. The response is then parsed to extract the chain of thought and the predicted answer.
+        The processed results are saved to a file, and a list of dictionaries with the relevant information is returned.
 
-        :param data: A list of dictionaries, where each dictionary contains information about a sample, 
-                    including 'question', 'answer', and 'options'.
-        :return: A list of dictionaries, where each dictionary contains the 'idx', 'question', 'answer', 
-                'options', 'cot' (chain of thought), and 'pred_ans' (predicted answer).
+        Parameters
+        ----------
+        data : list of dict
+            A list of dictionaries, where each dictionary contains information about a sample, 
+            including 'question', 'answer', and 'options'.
+
+        Returns
+        -------
+        list of dict
+            A list of dictionaries, where each dictionary contains 'idx', 'question', 'answer', 
+            'options', 'cot' (chain of thought), and 'pred_ans' (predicted answer).
         """
         # Create a folder for cot responses
         cot_folder = os.path.join(self.result_folder, "cot_responses")
         if not os.path.isdir(cot_folder):
             os.mkdir(cot_folder)
         qa_dict = []
+        ab_normal_cot = 0
         for idx, item in enumerate(tqdm(data)):    
             prompt = build_zero_shot_prompt(system_prompt, item)
             try:
@@ -99,9 +123,11 @@ class PreProcessor:
                 # Convert the response to a dictionary
                 # In case the response is not valid
                 if not validate_response(response):
+                    ab_normal_cot += 1
                     continue
 
                 # Parse the response
+                # TODO: add answer_idx to avoid unnecessary mapping between answer and answer_idx
                 cot, pred_ans = parse_answer(response)
                 dict_elem = {}
                 dict_elem["idx"] = idx
@@ -115,6 +141,8 @@ class PreProcessor:
             except Exception as e :
                 print(str(e))
         
+        print(">>> No. of abnormal cot responses: ", ab_normal_cot)
+        
         write_jsonl_file(self.cot_json_fn, qa_dict)
 
         return qa_dict  
@@ -124,15 +152,21 @@ class PreProcessor:
         """
         Filter questions whose predicted answer does not match the actual answer.
 
-        Args:
-            qa_dict (list): A list of dictionaries, where each dictionary represents a sample in the data.
-                Each dictionary should contain the keys "idx", "question", "answer", "options", "cot", and "pred_ans".
+        Parameters
+        ----------
+        qa_dict : list
+            A list of dictionaries, where each dictionary contains information about a sample, 
+            including 'idx', 'question', 'answer', 'options', 'cot' (chain of thought), and 'pred_ans' (predicted answer).
 
-        Returns:
-            filtered_qa_dict (list): A list of dictionaries, where each dictionary represents a sample in the filtered data.
+        Returns
+        -------
+        filtered_qa_dict : list
+            A filtered list of dictionaries, where each dictionary contains the same information as the input,
+            but only for the samples whose predicted answer matches the actual answer.
         """
         filtered_qa_dict = []
         for item in tqdm(qa_dict):
+            # TODO: Change to use answer_idx, no need to do this mapping
             pred_ans = item["options"][item["pred_ans"]]
             if pred_ans == item["answer"]:
                 filtered_qa_dict.append(item)
@@ -146,15 +180,20 @@ class PreProcessor:
     # Embed all questions
     def embed_questions(self):
         """
-        Embeds all questions in the filtered data using the specified embedding model.
+        Embed all questions in the filtered data with the specified embedding model.
 
-        Modifies each item in the filtered data by adding an "embedding" key with the embedding of the question.
-        Also adds an "answer_idx" key with the index of the correct answer in the options list.
+        Parameters
+        ----------
+        None
 
-        :return: None
+        Returns
+        -------
+        None
         """
         for item in tqdm(self.filtered_qa_dict):
             item["embedding"] = get_embedding(item["question"], model=self.embedding_model)
+
+            # TODO: Change to use answer_idx, no need to do this mapping
             inv_options_map = {v:k for k,v in item["options"].items()}
             item["answer_idx"] = inv_options_map[item["answer"]]
 
