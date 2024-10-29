@@ -36,7 +36,7 @@ You are a highly knowledgeable medical professional. For each question provided,
 
 Instructions:
 - Think through the question and outline your reasoning in a clear, logical sequence.
-- Conclude with a single letter indicating your chosen answer.
+- Conclude with a single letter indicating your chosen answer by explicitly saying: "Therefore, the answer is [final choice: A, B, C, or D]".
 
 Response format:
 
