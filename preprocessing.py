@@ -116,7 +116,7 @@ class PreProcessor:
         for idx, item in enumerate(tqdm(data)):    
             prompt = build_zero_shot_prompt(system_prompt, item)
             try:
-                response = get_response(prompt, model_name="llama3.2:1b", max_tokens=500)
+                response = get_response(prompt, model_name="llama3.2:1b", max_tokens=1000)
                 with open(os.path.join(cot_folder, str(idx) + ".txt"), "w", encoding="utf-8") as f:
                     f.write(response)
 
