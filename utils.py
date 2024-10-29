@@ -48,8 +48,8 @@ Output:
 ## Step-by-step Reasoning
 [Step-by-step reasoning goes here]
 
-## Answer
-[Final answer goes here: Therefore, the answer is [A, B, C, or D].]
+## Single-Letter Answer
+Therefore, the answer is [A, B, C, or D].
 """
 
 # # V0
@@ -77,8 +77,8 @@ Input:
 {{answer_choices}}
 
 Output:
-## Answer
-[Final answer goes here: Therefore, the answer is [A, B, C, or D].]
+## Single-Letter Answer
+Therefore, the answer is [A, B, C, or D].
 """
 
 def write_jsonl_file(file_path, dict_list):
