@@ -1,0 +1,14 @@
+## Answer
+(model generated chain of thought explanation)
+
+To determine which option is indicative of metastatic disease in a patient with prostatic adenocarcinoma, let's analyze each choice step by step:
+
+A. Elevated Prostatic Acid Phosphatase (PAP) - PAP levels are often elevated in prostate cancer due to the increased production of prostate-specific antigen (PSA). However, this elevation can also be seen in benign conditions such as prostatitis or prostatic hyperplasia. While an elevated PAP level may suggest a possible metastatic process, it is not specific enough to confirm metastasis.
+
+B. Involvement of the periurethral zone - The periurethral zone is a common site for prostate cancer metastases. However, involvement of this area alone does not necessarily indicate metastatic disease.
+
+C. New-onset lower back pain - Lower back pain can be associated with various conditions, including prostate cancer. While it may suggest bone metastasis, which could be a sign of advanced disease, it is not specific to metastatic disease and can also be seen in other conditions such as osteoporosis or spinal stenosis.
+
+D. Palpation of a hard nodule on digital rectal examination - This option is more indicative of metastatic disease. A hard nodule palpable during a digital rectal examination (DRE) is often associated with prostate cancer, particularly if it is located in the peripheral zone of the prostate. The presence of such a nodule can be an indicator of local spread or invasion into surrounding tissues.
+
+Therefore, based on the analysis of each option, the most indicative sign of metastatic disease in this patient would be the palpation of a hard nodule on digital rectal examination.

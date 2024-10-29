@@ -1,0 +1,22 @@
+## Answer
+(model generated chain of thought explanation)
+
+Given the scenario, let's break down the key points:
+
+1. **Recent job loss and increased isolation**: This could be a significant stressor for someone, potentially leading to psychological symptoms.
+2. **Physical examination findings**:
+   - Significant weakness in both upper and lower extremities
+   - Inability to plantarflex the ankle while supine (indicative of spasticity or stiffness)
+   - Unsteady gait
+   - Normal deep tendon reflexes
+
+These findings suggest a neurological issue rather than a physical injury. The absence of abnormalities on CT, MRI, and MR angiography rules out acute hemorrhagic stroke.
+
+3. **Conversion disorder**: This is characterized by the presence of neurological symptoms that cannot be explained by medical conditions or other factors (e.g., conversion from another condition). While possible in this scenario, there's no clear indication of a psychological origin for her symptoms.
+4. **Malingering**: This involves intentionally falsifying or exaggerating symptoms to gain attention or financial compensation. Given the lack of evidence supporting this diagnosis and the fact that she is unable to provide a history, malingering seems unlikely.
+5. **Somatic symptom disorder (SSD)**: SSD is characterized by one or more chronic physical symptoms (e.g., pain, fatigue) that are distressing but not severe enough to meet criteria for another mental health condition. The patient's presentation of neurological symptoms without clear evidence of a medical cause makes this diagnosis less likely.
+6. **Acute hemorrhagic stroke**: Given the normal CT and MRI findings, there is no indication of an acute stroke.
+
+Considering these points, the most plausible explanation for her symptoms is somatic symptom disorder (SSD). This condition can be triggered by psychological stressors such as job loss, leading to the development of chronic physical symptoms that are not explained by a medical condition. The neurological symptoms she exhibits align with SSD, and there's no clear evidence supporting another diagnosis.
+
+Therefore, the answer is C. Somatic symptom disorder.

@@ -1,0 +1,20 @@
+## Answer
+(model generated chain of thought explanation)
+
+To address this question, let's break down the key points and analyze them step by step:
+
+1. **Patient's symptoms**: The patient is experiencing restlessness, anxiety, chest tightness, shortness of breath, and agitation. These symptoms are indicative of a psychotic episode, which can be triggered or exacerbated by certain medications.
+
+2. **Current medication**: The patient is taking haloperidol, an antipsychotic medication known to cause extrapyramidal side effects (EPS), such as restlessness, agitation, and Parkinsonian-like symptoms like bradykinesia and rigidity. EPS are a common side effect of first-generation (typical) antipsychotics.
+
+3. **Alternative medication**: The question asks for a drug with a different mechanism of action that should have been prescribed instead of haloperidol to reduce the likelihood of developing psychotic symptoms.
+
+4. **Mechanisms of action**:
+   - A. NMDA receptor antagonism: This is the mechanism of action of ketamine, which can induce dissociative states and hallucinations but is not typically used as a first-line treatment for psychosis.
+   - B. GABA receptor antagonism: This is the mechanism of action of benzodiazepines, which are primarily used to treat anxiety and insomnia. They do not have a primary role in treating psychotic symptoms.
+   - C. 5-HT2A receptor antagonism: This is the mechanism of action of risperidone, an atypical antipsychotic that has a lower risk of EPS compared to typical antipsychotics like haloperidol.
+   - D. α2 receptor antagonism: This is the mechanism of action of clonidine and other α2 agonists, which are primarily used for hypertension and ADHD. They do not have a primary role in treating psychotic symptoms.
+
+5. **Conclusion**: Given that risperidone (atypical antipsychotic) has a lower risk of causing EPS compared to haloperidol (typical antipsychotic), it would be the most appropriate alternative medication for this patient, especially considering her history of psychosis and current symptoms.
+
+Therefore, the answer is C. 5-HT2A receptor antagonism.

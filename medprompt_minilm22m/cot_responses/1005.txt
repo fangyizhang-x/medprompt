@@ -1,0 +1,18 @@
+## Answer
+(model generated chain of thought explanation)
+
+To solve this question, let's break it down step by step:
+
+1. **Understanding the scenario**: The child is experiencing vision problems that are exacerbated in one specific activity (sorting colored balls into baskets), which suggests a genetic component.
+
+2. **Pedigree chart analysis**: The pedigree chart shows the patient (red arrow) and his family members, with an "eye condition" indicated by a red arrow as well. This indicates that there is a possible genetic link to eye problems in this family.
+
+3. **Considering inheritance modes**:
+   - **Mitochondrial inheritance (A)**: Mitochondria are the energy-producing structures within cells. While mitochondrial diseases can be inherited, they typically affect only females and are not directly linked to eye conditions.
+   - **Autosomal recessive (B)**: This mode of inheritance means that a child must inherit two copies of the mutated gene (one from each parent) to express the condition. However, this does not explain why the child's vision problems are specific to one activity.
+   - **Y-linked dominant (C)**: Y-linked traits are passed down through the Y chromosome. While some X-linked conditions can be inherited in an autosomal recessive pattern, a Y-linked dominant trait would not typically affect eye color or vision directly.
+   - **X-linked recessive (D)**: This mode of inheritance involves genes on the X chromosome. The most common X-linked recessive condition is Duchenne muscular dystrophy, which affects boys more frequently than girls due to its X-linked nature.
+
+4. **Connecting the dots**: Given that the child's vision problems are specific to one activity and considering the options provided, the most likely cause of these changes in the patient's vision involves an X-linked recessive mode of inheritance. This is because X-linked conditions often affect males more frequently than females due to their single X chromosome.
+
+Therefore, the answer is D.

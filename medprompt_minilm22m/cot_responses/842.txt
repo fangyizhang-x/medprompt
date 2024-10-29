@@ -1,0 +1,22 @@
+## Answer
+(model generated chain of thought explanation)
+
+Given the clinical presentation of this 22-year-old woman, we can analyze each option to determine which one provides the strongest indication for administering intravenous antibiotics.
+
+Firstly, let's consider the patient's symptoms:
+
+- Double vision and rapidly worsening pain and swelling in her right eye suggest an orbital or periorbital infection.
+- The presence of proptosis (bulging of the eye), diffuse edema, erythema, and tenderness of the eyelids indicates a severe inflammatory process.
+- Painful movements and restricted eye movements further support the diagnosis of an orbital or periorbital infection.
+
+Now, let's evaluate each option in relation to the patient's condition:
+
+A. Worsening of ocular pain - While worsening pain is a symptom of the patient's condition, it does not specifically indicate the need for intravenous antibiotics.
+
+B. Leukocytosis - An elevated leukocyte count (12,000/mm3) suggests an infectious process, but it is not specific to bacterial infections and can be seen in various conditions, including viral or autoimmune causes.
+
+C. Pain with eye movements - This symptom is highly suggestive of an orbital or periorbital infection, as the pain associated with movement is a characteristic feature of these conditions.
+
+D. Purulent nasal discharge and right cheek tenderness - While purulent nasal discharge is a symptom of a respiratory tract infection, which this patient had recently, it does not directly relate to her current symptoms in the eye.
+
+Considering the above analysis, the strongest indication for administering intravenous antibiotics to this patient is pain with eye movements (C), as it is a specific and characteristic symptom of an orbital or periorbital infection.

@@ -1,0 +1,14 @@
+## Answer
+## Phase 2
+
+Phase 2 clinical trials are designed to evaluate the safety and efficacy of a drug in a larger population, typically patients with the target disease or those who have not responded to previous treatments. In this phase, the new drug is tested in patients with Parkinson's disease to assess its effectiveness and potential side effects.
+
+The primary goals of Phase 2 clinical trials are:
+
+1. To confirm the efficacy of the drug in treating Parkinson's disease.
+2. To identify any potential side effects or adverse reactions associated with the treatment.
+3. To collect additional data on the drug's safety profile, including long-term follow-up and dose-finding.
+
+In contrast, Phase 1 trials typically involve a small group of healthy volunteers or patients to assess the safety and tolerability of the drug, while Phase 0 trials are often exploratory studies that aim to identify the pharmacokinetic and pharmacodynamic properties of the drug in humans. Phase 4 trials, on the other hand, focus on post-marketing surveillance and evaluating the drug's effectiveness in various patient populations after it has been approved for use.
+
+Therefore, based on the description provided, the new drug is currently being tested in patients with Parkinson's disease to determine its efficacy, making Phase 2 the most appropriate phase.

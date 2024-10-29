@@ -1,0 +1,14 @@
+## Answer
+(model generated chain of thought explanation)
+
+First, let's consider each option in relation to coagulation necrosis:
+
+A. The result of hydrolytic enzymes - Coagulation necrosis is actually characterized by the presence of hyalinization and fibrinoid necrosis, which are not primarily due to hydrolytic enzymes.
+
+B. Characterized by the preservation of cellular shape - This option is incorrect because coagulation necrosis typically results in cell death with loss of cellular outline, rather than preservation of cellular shape.
+
+C. Characteristic of brain ischemia - While coagulation necrosis can occur in various tissues, it is not specifically characteristic of brain ischemia. Brain tissue often shows liquefactive necrosis due to its high lipid content and the presence of blood vessels that are prone to rupture during ischemic events.
+
+D. Commonly associated with acute pancreatic necrosis - Coagulation necrosis is indeed a type of necrosis that occurs in response to severe injury, such as that caused by pancreatitis. It is characterized by the coagulative necrosis of cells and tissues due to the disruption of blood supply, leading to cell death without significant liquefaction.
+
+Therefore, based on this analysis, the correct answer is D.

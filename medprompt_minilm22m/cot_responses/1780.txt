@@ -1,0 +1,20 @@
+## Answer
+(model generated chain of thought explanation)
+
+To determine the most likely injured nerve, let's analyze the symptoms and examination findings:
+
+1. **Shoulder asymmetry**: This suggests a problem with the muscles or structures that stabilize the shoulder joint.
+2. **Inability to abduct the right arm above 90 degrees**: Abduction is primarily performed by the deltoid muscle, which is innervated by the axillary nerve (C). However, the question states that the patient cannot abduct her arm above 90 degrees, which suggests a more complex issue.
+3. **Protrusion of the medial aspect of the right scapula when pushing against a wall**: This finding is indicative of winging of the scapula, also known as scapular winging or sialgia. Scapular winging can be caused by weakness or paralysis of the serratus anterior muscle, which is innervated by the long thoracic nerve (B).
+4. **Physical examination findings**: The combination of shoulder asymmetry and scapular winging suggests that there may be a problem with the muscles or nerves controlling these functions.
+
+Given these symptoms, let's evaluate the options:
+
+- A. Upper trunk of the brachial plexus: This would more likely cause weakness or paralysis of the upper limb, which is not consistent with the patient's symptoms.
+- B. Long thoracic nerve: As mentioned earlier, this nerve innervates the serratus anterior muscle, and its injury could lead to scapular winging. The long thoracic nerve is responsible for the majority of the function of the serratus anterior muscle, making it a likely candidate for the patient's condition.
+- C. Suprascapular nerve: This nerve innervates the supraspinatus and infraspinatus muscles, which are primarily involved in shoulder abduction. While it could potentially cause shoulder instability or weakness, it is less likely to be directly responsible for scapular winging.
+- D. Thoracodorsal nerve: This nerve innervates the latissimus dorsi muscle, which is involved in adduction and internal rotation of the arm. It is not directly related to the symptoms described.
+
+Based on this analysis, the most likely injured nerve causing the patient's condition is the long thoracic nerve (B), as it is responsible for controlling the serratus anterior muscle, which is essential for shoulder stability and scapular positioning.
+
+The final

@@ -1,0 +1,35 @@
+## Answer
+(model generated chain of thought explanation)
+
+First, let's analyze the clinical presentation:
+
+- Multiple tense blisters over various body parts (abdomen, anterior chest, right upper extremity, and right thigh) with tender skin underneath.
+- The presence of blisters that do not blanch with pressure suggests a deeper burn injury.
+
+The key points to consider are:
+1. Tense blisters: This is indicative of partial-thickness burns, which can be further divided into first-degree (superficial) and second-degree (deep) burns based on the depth of the damage.
+2. Tender skin underneath: This suggests that there is some degree of inflammation or irritation from the burn, but not to the extent of a full-thickness burn.
+3. Blister rupture upon deroofing: This indicates that the blisters are likely second-degree burns.
+
+Now, let's consider the body surface area (BSA) affected by 2nd-degree burns:
+
+- First-degree burns typically cover less than 10% of the BSA and do not penetrate the epidermis.
+- Second-degree burns can affect a larger percentage of the BSA but still generally do not exceed 20-30%.
+- Third-degree burns, which are full-thickness burns, would be expected to cover more than 50% of the BSA.
+
+Given the clinical presentation, we can estimate the BSA affected by second-degree burns:
+
+- The patient has multiple tense blisters over various body parts, suggesting a significant area of skin damage.
+- The presence of tender skin underneath and blister rupture upon deroofing further supports the diagnosis of second-degree burns.
+
+A commonly used rule of thumb for estimating the percentage of BSA affected by 2nd-degree burns is to consider the number of blisters and their location. A study published in the Journal of Burn Care & Research found that:
+
+* For every blister, approximately 1-2% of the BSA may be affected.
+
+Given this information, we can estimate the BSA affected by second-degree burns as follows:
+
+* Assuming there are 5-10 blisters (a rough estimate based on the clinical presentation), and considering each blister affects approximately 0.5-1% of the BSA, a conservative estimate would be:
+	+ 5 blisters: 2.5-5% of the BSA
+	+ 10 blisters: 5-10% of the BSA
+
+Adding these estimates

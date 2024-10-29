@@ -1,0 +1,21 @@
+## Answer
+(model generated chain of thought explanation)
+
+Given the patient's symptoms and test results, let's break down the scenario step by step:
+
+1. **New onset discharge from breast**: This symptom is concerning for a variety of conditions, including hormonal imbalances, infections, or even pregnancy-related issues.
+2. **Noticing it in bra a few days ago**: The timing suggests that the discharge may be related to hormonal changes, as menstrual cycles typically start around 14-16 days after the first day of menstruation.
+3. **Soaking through to blouse**: This is a significant symptom indicating that the discharge is not just leaking but also possibly coming from the nipple itself.
+4. **Mortifying concern about being pregnant**: The patient's lack of menstrual period for three months raises concerns about pregnancy, which would explain the breast discharge and other symptoms.
+5. **Negative ß-HCG test**: This confirms that the patient is not pregnant, ruling out some potential causes like hormonal imbalances or ectopic pregnancy.
+
+Considering these points:
+
+- **A. Tamoxifine** is a selective estrogen receptor modulator (SERM) primarily used in breast cancer treatment and prevention. It's unlikely to cause nipple discharge.
+- **B. Haloperidol** is an antipsychotic medication that can have various side effects, but it's not typically associated with nipple discharge or hormonal imbalances leading to breast symptoms.
+- **C. Cabergoline** is a dopamine agonist used in the treatment of hyperprolactinemia and Parkinson's disease. It can cause nipple discharge due to its effect on prolactin levels, which are often elevated during pregnancy.
+- **D. Carbidopa-levodopa** is a medication used in the treatment of Parkinson's disease. While it has various side effects, nipple discharge is not a common one.
+
+Given the patient's symptoms and test results, the most appropriate therapy would be to treat any potential hormonal imbalance that could be contributing to her breast symptoms, which is best managed with **C. Cabergoline**.
+
+The final answer is: C

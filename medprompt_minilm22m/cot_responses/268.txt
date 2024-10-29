@@ -1,0 +1,18 @@
+## Answer
+(model generated chain of thought explanation)
+
+To determine the sensitivity of the interferon-gamma-based assay, we need to understand what sensitivity means in this context.
+
+Sensitivity refers to the proportion of true positive results (i.e., correctly identified cases) out of all actual positives. In other words, it measures how well the test can detect people who actually have the disease.
+
+Given that 90 participants with a history of BCG vaccination tested positive for tuberculosis using the interferon-gamma assay and none were found to be infected, we can calculate the sensitivity as follows:
+
+- True Positives (TP) = Number of participants with TB confirmed by culture who tested positive for the assay = 90
+- False Negatives (FN) = Total number of participants without TB who tested negative for the assay = 10
+
+Sensitivity = TP / (TP + FN)
+= 90 / (90 + 10)
+= 90 / 100
+= 0.9 or 90%
+
+Therefore, the sensitivity of the interferon-gamma-based assay for diagnosing tuberculosis in this study is 90%.

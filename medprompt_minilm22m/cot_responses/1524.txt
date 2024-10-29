@@ -1,0 +1,16 @@
+## Answer
+(model generated chain of thought explanation)
+
+Given the patient's presentation and history, the most likely cause of his elevated blood pressure is atherosclerotic disease, particularly given his significant smoking history (55-pack-year) and hyperlipidemia. The presence of bruits bilaterally just lateral to the midline near the umbilicus is highly suggestive of aortic stenosis.
+
+The patient's current anti-hypertensive regimen, including a beta-blocker, thiazide diuretic, and calcium channel blocker, may not be sufficient to control his blood pressure adequately. The fact that he has not smoked for 5 months suggests that the smoking-related vascular disease is likely resolved or significantly reduced.
+
+A CT abdomen/pelvis (Option A) might be useful in evaluating the kidneys and liver, but it does not directly address the patient's hypertension or aortic stenosis.
+
+Increasing the dose of his current blood pressure medications (Option B) may help control his blood pressure, but given the patient's significant smoking history and hyperlipidemia, this approach is unlikely to be sufficient.
+
+Lisinopril (Option C), an ACE inhibitor, is often used in patients with aortic stenosis as it can help reduce left ventricular afterload. However, starting lisinopril without first evaluating for aortic stenosis would not be the best next step.
+
+A renal ultrasound with Doppler (Option D) is the most appropriate next step in management. This imaging modality will allow for the evaluation of the patient's kidneys and the assessment of the renal arteries, which are often affected by atherosclerotic disease. The presence of bruits bilaterally suggests that there may be significant stenosis or occlusion in these vessels, which could be causing his elevated blood pressure.
+
+This approach will provide valuable information on the patient's cardiovascular risk profile and help guide further management decisions, including potential referral to a cardiothoracic specialist for further evaluation and treatment of his aortic stenosis.

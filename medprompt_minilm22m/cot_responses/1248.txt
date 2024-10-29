@@ -1,0 +1,12 @@
+## Answer
+(model generated chain of thought explanation)
+
+The patient's symptoms, including sudden-onset dizziness, nausea, and vomiting, occurring after a specific activity (going to bed), are suggestive of positional vertigo. The fact that his symptoms resolved once he was laid back on the stretcher also supports this diagnosis.
+
+The presence of physiologic nystagmus, which is an involuntary movement of the eyes, further supports the diagnosis of positional vertigo. Nystagmus can be caused by a variety of conditions, including inner ear problems or vestibular neuritis.
+
+The patient's history of eczema and normal physical exam findings do not suggest any underlying condition that would cause his symptoms to be exacerbated by certain positions (e.g., B). The fact that his symptoms improved after 2 minutes of being in the position that exacerbates them also suggests a positional component, which is consistent with A.
+
+The patient's age and lack of other symptoms or signs of more serious conditions (such as vertebrobasilar stroke or vestibular neuritis) make C less likely. While it is possible to have a vertebrobasilar stroke in someone over 60 years old, the fact that his symptoms resolved once he was laid back on the stretcher and improved with time makes this diagnosis less likely.
+
+D is also unlikely because vestibular neuritis typically presents with more severe symptoms, such as hearing loss or tinnitus, which are not present in this patient.

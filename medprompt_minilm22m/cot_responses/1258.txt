@@ -1,0 +1,27 @@
+## Answer
+(model generated chain of thought explanation)
+
+Given the patient's symptoms and examination findings, let's break down the key points:
+
+1. **Ocular Motility Abnormalities**: The patient exhibits nystagmus when looking to one side (left or right), which is indicative of a problem with the extraocular muscles' coordination. This suggests an issue with the lateral rectus muscle, which is responsible for adduction (moving the eye towards the midline). The fact that her right eye does not adduct while her left eye abducts with nystagmus further supports this diagnosis.
+
+2. **Normal Pupils and Convergence**: The absence of pupillary abnormalities and normal convergence suggest that there are no significant issues with the afferent pathways or the oculomotor nerve (cranial nerve III).
+
+3. **Peripheral Vision Loss**: While the patient's diplopia is more prominent when looking at objects in her periphery, this symptom alone does not necessarily point towards an issue with the brainstem or cerebellum.
+
+4. **Normal Cranial Nerve Examination**: The rest of the cranial nerves are unremarkable, which helps to rule out conditions such as third nerve palsy (abducens nerve) or fourth nerve palsy (trochlear nerve).
+
+Considering these points, the most likely diagnosis is a lateral rectus muscle palsy. This condition can be caused by various factors, including trauma, tumors, or vascular issues.
+
+Given this diagnosis, the next best step in management would be to **order imaging studies** to rule out any underlying structural abnormalities that could be causing the patient's symptoms. The most appropriate imaging modality for this purpose is:
+
+## Answer
+(C) Magnetic resonance imaging (MRI) of the brain
+
+An MRI can provide detailed images of the brain and its structures, including the lateral rectus muscle and surrounding tissues. It can help identify any potential causes of the patient's symptoms, such as a tumor or vascular issue, that may not be visible on other imaging modalities like CT scans.
+
+The other options are less appropriate for this scenario:
+
+A. **Computed Tomography (CT) scan of the head**: While a CT scan is useful for detecting many types of head injuries and conditions, it is not typically used to evaluate the function of the extraocular muscles or the brainstem.
+
+B. **Lumbar puncture**: This procedure is usually performed to investigate neurological symptoms that suggest meningitis or other

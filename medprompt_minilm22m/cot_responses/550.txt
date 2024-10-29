@@ -1,0 +1,12 @@
+## Answer
+(model generated chain of thought explanation)
+
+To determine which muscle is most likely activated during the movement of opening the jaw against resistance, we need to consider the function and location of each muscle listed.
+
+The lateral pterygoid muscle is responsible for elevating the mandible (lowering the jaw), which would not be effective in opening the jaw. The masseter muscle is involved in closing the jaw, but it is more related to the movement of the mandible during mastication rather than opening the jaw against resistance.
+
+The hyoglossus muscle is primarily responsible for depressing the tongue and retracting the tongue towards the oral cavity, which does not directly relate to opening the jaw. The buccinator muscle, however, plays a crucial role in closing the mouth by compressing the cheeks against the teeth, thereby helping to open the mouth.
+
+Given that the patient reports difficulty closing her eyes and chewing, it is likely that she has weakness or paralysis of the muscles involved in these functions. Among the options provided, the buccinator muscle is most closely associated with the function of opening the jaw against resistance, as it helps to compress the cheeks against the teeth, facilitating this action.
+
+Therefore, the answer is D.

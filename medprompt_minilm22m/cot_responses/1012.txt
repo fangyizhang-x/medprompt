@@ -1,0 +1,12 @@
+## Answer
+(model generated chain of thought explanation)
+
+Given the patient's gradual progression of limited movement in his left shoulder over six years, combined with the absence of significant pain or other symptoms that might suggest an acute injury, it is reasonable to consider a chronic condition such as adhesive capsulitis (frozen shoulder) or rotator cuff pathology. The lack of improvement with NSAIDs and rest also supports this possibility.
+
+The patient's history of trauma 10 years ago, although not directly related to the current symptoms, raises the possibility of a pre-existing rotator cuff injury that may have been overlooked initially. However, given the gradual progression and absence of significant pain or other symptoms, it is less likely that an acute traumatic event is the primary cause.
+
+The physical examination findings of limited abduction and external rotation in the left arm, with normal passive range of motion but reduced active movement, are consistent with adhesive capsulitis. The lack of muscle power bilaterally also supports this diagnosis, as adhesive capsulitis typically results in decreased strength and endurance of the affected muscles.
+
+Given these considerations, the most appropriate next step would be to initiate a rehabilitation program aimed at improving shoulder mobility and strengthening the surrounding muscles. This is likely to involve physical therapy, which can help to reduce pain, improve function, and enhance overall quality of life.
+
+Option B (Physical therapy) is therefore the most appropriate next step for this patient, as it addresses the likely underlying cause of his symptoms and has a high likelihood of providing benefit in terms of improving shoulder function and reducing pain.
