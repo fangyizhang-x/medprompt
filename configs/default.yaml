@@ -3,4 +3,4 @@ train_data_file: data/phrases_no_exclude_train.jsonl
 test_data_file: data/phrases_no_exclude_test.jsonl
 result_folder: debug
 embedding_model: all-minilm:22m
-eval_types: [zero_shot, few_shot, few_shot_cot, kNN_few_shot_cot, kNN_few_shot_cot_ensemble]
+eval_types: [few_shot_cot, kNN_few_shot_cot, kNN_few_shot_cot_ensemble]

@@ -52,6 +52,7 @@ client = OpenAI(
 # Therefore, the answer is [A, B, C, or D].
 # """
 
+
 # Version0.3
 system_prompt = """
 You are a knowledgeable medical professional. For each question, carefully evaluate the answer choices and provide a step-by-step reasoning process before selecting the final answer.
@@ -76,6 +77,35 @@ Output:
 Therefore, the answer is [A, B, C, or D].
 """
 
+
+# # Version0.4
+# system_prompt = """
+# You are a knowledgeable medical professional. For each question, carefully evaluate the answer choices and reason step-by-step before reaching a final answer.
+
+# Instructions:
+# - Think through the question and outline your reasoning in a clear, logical sequence.
+# - Conclude to one answer choice from the given options, and state your chosen answer using the exact sentence: "Therefore, the answer is [A, B, C, or D]".
+
+# Strict Response Format Requirements:
+# - Start your response with "## Reasoning" on a new line.
+# - Provide a clear, logical sequence of your reasoning, outlining each step in detail.
+# - Conlude with "## Final Answer" on a new line. You have to strictly use "## Final Answer".
+# - State the final answer on a new line. Your final answer should be a single letter indicating the answer choice you selected. You have to strictly use the exact sentence: "Therefore, the answer is [A, B, C, or D]."
+
+# Strictly follow the Response Template shown below:
+
+# Input:
+# ## Question: {{question}}
+# {{answer_choices}}
+
+# Output:
+# ## Reasoning
+# [Provide your step-by-step reasoning here]
+
+# ## Final Answer
+# Therefore, the answer is [A, B, C, or D].
+# """
+
 # # V0
 # system_zero_shot_prompt = """You are an expert medical professional. You are provided with a medical question with multiple answer choices.
 # Your goal is to think through the question carefully and respond directly with the answer option.
@@ -94,7 +124,7 @@ Therefore, the answer is [A, B, C, or D].
 system_zero_shot_prompt = """
 You are a highly knowledgeable medical professional. For each question provided, carefully evaluate the answer choices and conclude with a single letter for the chosen answer in this format: "Therefore, the answer is [A, B, C, or D]."
 
-Strictly follow the Response Format shown below:
+Strictly follow the Response Template shown below:
 
 Input:
 ## Question: {{question}}
@@ -309,7 +339,7 @@ def extract_ans_option(s):
         The captured answer option if the pattern is found, otherwise None.
     """
     # match = re.search(r'^Therefore, the answer is ([A-Z])', s)
-    match = re.search(r'^(Therefore, the answer is|The final answer is) ([A-Z])', s)
+    match = re.search(r'^(Therefore, the answer is|The final answer is|the answer is) ([A-Z])', s)
     if match:
         return match.group(2)  # Returns the captured alphabet
     return None 

@@ -116,23 +116,28 @@ class PreProcessor:
         for idx, item in enumerate(tqdm(data)):    
             prompt = build_zero_shot_prompt(system_prompt, item)
             try:
-                response = get_response(prompt, model_name="llama3.2:1b", max_tokens=2000)
+                response = get_response(prompt, model_name="llama3.2:1bfy", max_tokens=2000)
                 with open(os.path.join(cot_folder, str(idx) + ".txt"), "w", encoding="utf-8") as f:
                     f.write(response)
+
+                # response = get_response(prompt, model_name="llama3.2:1bfy", max_tokens=2000)
+                # with open(os.path.join(cot_folder, str(idx) + ".txt"), "r", encoding="utf-8") as f:
+                #     response = f.read()
 
                 # Convert the response to a dictionary
                 # In case the response is not valid
                 if not validate_response(response):
+                    # print(">>> Abnormal cot response: ", idx)
                     ab_normal_cot += 1
                     continue
 
                 # Parse the response
-                # TODO: add answer_idx to avoid unnecessary mapping between answer and answer_idx
                 cot, pred_ans = parse_answer(response)
                 dict_elem = {}
                 dict_elem["idx"] = idx
                 dict_elem["question"] = item["question"]
                 dict_elem["answer"] = item["answer"]
+                dict_elem["answer_idx"] = item["answer_idx"]
                 dict_elem["options"] = item["options"]
                 dict_elem["cot"] = cot
                 dict_elem["pred_ans"] = pred_ans
@@ -166,9 +171,9 @@ class PreProcessor:
         """
         filtered_qa_dict = []
         for item in tqdm(qa_dict):
-            # TODO: Change to use answer_idx, no need to do this mapping
-            pred_ans = item["options"][item["pred_ans"]]
-            if pred_ans == item["answer"]:
+            # pred_ans = item["pred_ans"]
+            # print(f"File {item['idx']} >> pred: {pred_ans}; gt: {item['answer_idx']}")
+            if item["pred_ans"] == item["answer_idx"]:
                 filtered_qa_dict.append(item)
 
         print(">>> No. of Raw Responses: ", len(qa_dict))

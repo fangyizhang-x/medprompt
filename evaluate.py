@@ -175,7 +175,7 @@ class Inferencer():
             
             # Get responses for the five prompts
             for prompt in tqdm(prompt_variants):
-                response = get_response(prompt, model_name="llama3.2:1b", max_tokens=500)
+                response = get_response(prompt, model_name="llama3.2:1bfy", max_tokens=1000)
                 cot_responses.append(response)
             
             for question_sample, answer in zip(question_variants, cot_responses):
@@ -250,7 +250,7 @@ class Inferencer():
     
             # Get response
             prompt = build_few_shot_prompt(system_prompt,  question, top_k_dicts)
-            response = get_response(prompt, model_name="llama3.2:1b", max_tokens=500)
+            response = get_response(prompt, model_name="llama3.2:1bfy", max_tokens=1000)
    
             if validate_response(response):
                 cot, pred_ans = parse_answer(response)
@@ -290,7 +290,7 @@ class Inferencer():
         ctr = 0
         for item in tqdm(self.test_samples):
             messages = build_few_shot_prompt(system_prompt, item, self.random_few_shot_examples, include_cot=True)
-            response = get_response(messages, "llama3.2:1b", max_tokens=500)
+            response = get_response(messages, "llama3.2:1bfy", max_tokens=1000)
 
             if validate_response(response):
                 cot, pred_ans = parse_answer(response)
@@ -330,7 +330,7 @@ class Inferencer():
         ctr = 0
         for item in tqdm(self.test_samples):
             messages = build_few_shot_prompt(system_zero_shot_prompt, item, self.random_few_shot_examples, include_cot=False)
-            response = get_response(messages, "llama3.2:1b", max_tokens=500)
+            response = get_response(messages, "llama3.2:1bfy", max_tokens=1000)
             pred_ans = extract_ans_option(response.split("\n")[-1])
             item["pred_ans"] = pred_ans
 
@@ -364,7 +364,7 @@ class Inferencer():
         ctr = 0
         for item in tqdm(self.test_samples):
             messages = build_zero_shot_prompt(system_zero_shot_prompt, item)
-            response = get_response(messages, "llama3.2:1b", max_tokens=500)
+            response = get_response(messages, "llama3.2:1bfy", max_tokens=1000)
             pred_ans = extract_ans_option(response.split("\n")[-1])
             item["pred_ans"] = pred_ans
 
