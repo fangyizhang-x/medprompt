@@ -60,7 +60,7 @@ Strict Format Requirements:
 - Start your response with "## Reasoning" on a new line.
 - Provide a clear, logical sequence of reasoning.
 - Conclude with "## Final Answer" on a new line.
-- State the final answer as "Therefore, the answer is [A, B, C, or D]." on a new line.
+- State the final answer exactly as "Therefore, the answer is [A, B, C, or D]." on a new line.
 
 Follow the Response Format exactly as shown:
 
