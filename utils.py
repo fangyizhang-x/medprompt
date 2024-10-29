@@ -30,25 +30,47 @@ client = OpenAI(
 # (model generated chain of thought explanation)
 # Therefore, the answer is [final model answer (e.g. A,B,C,D)]"""
 
-# Version0.2
+# # Version0.2
+# system_prompt = """
+# You are a highly knowledgeable medical professional. For each question provided, carefully evaluate the answer choices and explain your reasoning step by step before reaching a final answer.
+
+# Instructions:
+# - Think through the question and outline your reasoning in a clear, logical sequence.
+# - Conclude with a single letter indicating your chosen answer by explicitly saying: "Therefore, the answer is [A, B, C, or D]".
+
+# Response format:
+
+# Input:
+# ## Question: {{question}}
+# {{answer_choices}}
+
+# Output:
+# ## Step-by-step Reasoning
+# [Step-by-step reasoning goes here]
+
+# ## Single-Letter Answer
+# Therefore, the answer is [A, B, C, or D].
+# """
+
+# Version0.3
 system_prompt = """
-You are a highly knowledgeable medical professional. For each question provided, carefully evaluate the answer choices and explain your reasoning step by step before reaching a final answer.
+You are a knowledgeable medical professional. For each question, carefully assess the answer choices and provide a clear, step-by-step reasoning process before selecting the final answer.
 
-Instructions:
-- Think through the question and outline your reasoning in a clear, logical sequence.
-- Conclude with a single letter indicating your chosen answer by explicitly saying: "Therefore, the answer is [A, B, C, or D]".
+Guidelines:
+- Analyze the question methodically, outlining your reasoning in a logical sequence.
+- Conclude with a single letter for the chosen answer in this format: "Therefore, the answer is [A, B, C, or D]."
 
-Response format:
+Response Template:
 
 Input:
 ## Question: {{question}}
 {{answer_choices}}
 
 Output:
-## Step-by-step Reasoning
-[Step-by-step reasoning goes here]
+## Reasoning
+[Provide detailed, step-by-step reasoning here]
 
-## Single-Letter Answer
+## Final Answer
 Therefore, the answer is [A, B, C, or D].
 """
 
@@ -68,16 +90,16 @@ Therefore, the answer is [A, B, C, or D].
 
 # Version0.1
 system_zero_shot_prompt = """
-You are a highly knowledgeable medical professional. For each question provided, carefully evaluate the answer choices and conclude with a single letter indicating your chosen answer by explicitly saying: "Therefore, the answer is [A, B, C, or D]".
+You are a highly knowledgeable medical professional. For each question provided, carefully evaluate the answer choices and conclude with a single letter for the chosen answer in this format: "Therefore, the answer is [A, B, C, or D]."
 
-Response format:
+Response Template:
 
 Input:
 ## Question: {{question}}
 {{answer_choices}}
 
 Output:
-## Single-Letter Answer
+## Final Answer
 Therefore, the answer is [A, B, C, or D].
 """
 
@@ -185,9 +207,9 @@ def format_answer(cot, answer):
     str
         The formatted answer string.
     """
-    return f"""## Step-by-step Reasoning
+    return f"""## Reasoning
 {cot}
-## Answer
+## Final Answer
 Therefore, the answer is {answer}"""
 
 def build_few_shot_prompt(system_prompt, question, examples, include_cot=True):
@@ -219,7 +241,7 @@ def build_few_shot_prompt(system_prompt, question, examples, include_cot=True):
         if include_cot:
             messages.append({"role": "assistant", "content": format_answer(elem["cot"], elem["answer_idx"])})        
         else:           
-            answer_string = f"""## Answer\nTherefore, the answer is {elem["answer_idx"]}"""
+            answer_string = f"""## Final Answer\nTherefore, the answer is {elem["answer_idx"]}"""
             messages.append({"role": "assistant", "content": answer_string})
             
     messages.append({"role": "user", "content": create_query(question)})
@@ -305,7 +327,7 @@ def matches_answer_start(s):
         True if the string starts with '## Answer', False otherwise.
     """
     # return s.startswith("## Answer")
-    return s.startswith("## Step-by-step Reasoning")
+    return s.startswith("## Reasoning")
 
 def validate_response(s):
     """
@@ -343,7 +365,7 @@ def parse_answer(response):
     """
     split_response = response.split("\n")
     # assert split_response[0] == "## Answer"
-    assert split_response[0] == "## Step-by-step Reasoning"
+    assert split_response[0] == "## Reasoning"
     cot_reasoning = "\n".join(split_response[1:-1]).strip()
     ans_choice = extract_ans_option(split_response[-1])
     return cot_reasoning, ans_choice
