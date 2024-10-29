@@ -36,7 +36,38 @@ You are a highly knowledgeable medical professional. For each question provided,
 
 Instructions:
 - Think through the question and outline your reasoning in a clear, logical sequence.
-- Conclude with a single letter indicating your chosen answer by explicitly saying: "Therefore, the answer is [final choice: A, B, C, or D]".
+- Conclude with a single letter indicating your chosen answer by explicitly saying: "Therefore, the answer is [A, B, C, or D]".
+
+Response format:
+
+Input:
+## Question: {{question}}
+{{answer_choices}}
+
+Output:
+## Step-by-step Reasoning
+[Step-by-step reasoning goes here]
+## Answer
+Therefore, the answer is [A, B, C, or D].
+"""
+
+# # V0
+# system_zero_shot_prompt = """You are an expert medical professional. You are provided with a medical question with multiple answer choices.
+# Your goal is to think through the question carefully and respond directly with the answer option.
+# Please make sure your final answer is a single letter indicating the answer choice you selected.
+# Below is the format for each question and answer:
+
+# Input:
+# ## Question: {{question}}
+# {{answer_choices}}
+
+# Output:
+# ## Answer
+# Therefore, the answer is [final model answer (e.g. A,B,C,D)]"""
+
+# Version0.1
+system_zero_shot_prompt = """
+You are a highly knowledgeable medical professional. For each question provided, carefully evaluate the answer choices and conclude with a single letter indicating your chosen answer by explicitly saying: "Therefore, the answer is [A, B, C, or D]".
 
 Response format:
 
@@ -46,22 +77,8 @@ Input:
 
 Output:
 ## Answer
-[Step-by-step reasoning goes here]
-Therefore, the answer is [final choice: A, B, C, or D].
+Therefore, the answer is [A, B, C, or D].
 """
-
-system_zero_shot_prompt = """You are an expert medical professional. You are provided with a medical question with multiple answer choices.
-Your goal is to think through the question carefully and respond directly with the answer option.
-Please make sure your final answer is a single letter indicating the answer choice you selected.
-Below is the format for each question and answer:
-
-Input:
-## Question: {{question}}
-{{answer_choices}}
-
-Output:
-## Answer
-Therefore, the answer is [final model answer (e.g. A,B,C,D)]"""
 
 def write_jsonl_file(file_path, dict_list):
     """
@@ -167,8 +184,9 @@ def format_answer(cot, answer):
     str
         The formatted answer string.
     """
-    return f"""## Answer
+    return f"""## Step-by-step Reasoning
 {cot}
+## Answer
 Therefore, the answer is {answer}"""
 
 def build_few_shot_prompt(system_prompt, question, examples, include_cot=True):
@@ -265,9 +283,10 @@ def extract_ans_option(s):
     str or None
         The captured answer option if the pattern is found, otherwise None.
     """
-    match = re.search(r'^Therefore, the answer is ([A-Z])', s)
+    # match = re.search(r'^Therefore, the answer is ([A-Z])', s)
+    match = re.search(r'^(Therefore, the answer is|The final answer is) ([A-Z])', s)
     if match:
-        return match.group(1)  # Returns the captured alphabet
+        return match.group(2)  # Returns the captured alphabet
     return None 
 
 def matches_answer_start(s):
@@ -284,7 +303,8 @@ def matches_answer_start(s):
     bool
         True if the string starts with '## Answer', False otherwise.
     """
-    return s.startswith("## Answer")
+    # return s.startswith("## Answer")
+    return s.startswith("## Step-by-step Reasoning")
 
 def validate_response(s):
     """
@@ -301,6 +321,8 @@ def validate_response(s):
         True if the response is valid, False otherwise.
     """
     file_content = s.split("\n")
+
+
     
     return matches_ans_option(file_content[-1]) and matches_answer_start(s)
 
@@ -319,7 +341,8 @@ def parse_answer(response):
         A tuple containing the extracted CoT reasoning and the answer choice.
     """
     split_response = response.split("\n")
-    assert split_response[0] == "## Answer"
+    # assert split_response[0] == "## Answer"
+    assert split_response[0] == "## Step-by-step Reasoning"
     cot_reasoning = "\n".join(split_response[1:-1]).strip()
     ans_choice = extract_ans_option(split_response[-1])
     return cot_reasoning, ans_choice
