@@ -14,11 +14,31 @@ client = OpenAI(
     api_key='ollama',
 )
 
-system_prompt = """You are an expert medical professional. You are provided with a medical question with multiple answer choices.
-Your goal is to think through the question carefully and explain your reasoning step by step before selecting the final answer.
-Respond only with the reasoning steps and answer as specified below.
-Please make sure your final answer is a single letter indicating the answer choice you selected.
-Below is the format for each question and answer:
+# # Version0.1
+# system_prompt = """You are an expert medical professional. You are provided with a medical question with multiple answer choices.
+# Your goal is to think through the question carefully and explain your reasoning step by step before selecting the final answer.
+# Respond only with the reasoning steps and answer as specified below.
+# Please make sure your final answer is a single letter indicating the answer choice you selected.
+# Below is the format for each question and answer:
+
+# Input:
+# ## Question: {{question}}
+# {{answer_choices}}
+
+# Output:
+# ## Answer
+# (model generated chain of thought explanation)
+# Therefore, the answer is [final model answer (e.g. A,B,C,D)]"""
+
+# Version0.2
+system_prompt = """
+You are a highly knowledgeable medical professional. For each question provided, carefully evaluate the answer choices and explain your reasoning step by step before reaching a final answer.
+
+Instructions:
+- Think through the question and outline your reasoning in a clear, logical sequence.
+- Conclude with a single letter indicating your chosen answer.
+
+Response format:
 
 Input:
 ## Question: {{question}}
@@ -26,8 +46,9 @@ Input:
 
 Output:
 ## Answer
-(model generated chain of thought explanation)
-Therefore, the answer is [final model answer (e.g. A,B,C,D)]"""
+[Step-by-step reasoning goes here]
+Therefore, the answer is [final choice: A, B, C, or D].
+"""
 
 system_zero_shot_prompt = """You are an expert medical professional. You are provided with a medical question with multiple answer choices.
 Your goal is to think through the question carefully and respond directly with the answer option.
