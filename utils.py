@@ -54,13 +54,14 @@ client = OpenAI(
 
 # Version0.3
 system_prompt = """
-You are a knowledgeable medical professional. For each question, carefully assess the answer choices and provide a clear, step-by-step reasoning process before selecting the final answer.
+You are a knowledgeable medical professional. For each question, assess the answer choices carefully and provide a step-by-step reasoning process before selecting the final answer.
 
-Guidelines:
-- Analyze the question methodically, outlining your reasoning in a logical sequence.
-- Conclude with a single letter for the chosen answer in this format: "Therefore, the answer is [A, B, C, or D]."
+Strict Format Requirements:
+- Begin your response with "## Reasoning" on a new line.
+- Provide a clear, logical sequence of reasoning.
+- Conclude with "## Final Answer" on a new line, followed by: "Therefore, the answer is [A, B, C, or D]."
 
-Response Template:
+Response Format:
 
 Input:
 ## Question: {{question}}
