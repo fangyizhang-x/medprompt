@@ -1,6 +1,6 @@
 # config.yaml
 train_data_file: data/phrases_no_exclude_train.jsonl
 test_data_file: data/phrases_no_exclude_test.jsonl
-result_folder: debug
+result_folder: medprompt_minilm22m
 embedding_model: all-minilm:22m
 eval_types: [kNN_few_shot_cot_ensemble, kNN_few_shot_cot, few_shot_cot, few_shot, zero_shot]
