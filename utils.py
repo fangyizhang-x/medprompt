@@ -58,9 +58,9 @@ You are a knowledgeable medical professional. For each question, carefully evalu
 
 Strict Format Requirements:
 - Start your response with "## Reasoning" on a new line.
-- Provide a clear, logical sequence of reasoning.
+- Provide a clear, logical sequence of reasoning, outlining each step.
 - Conclude with "## Final Answer" on a new line.
-- State the final answer exactly as "Therefore, the answer is [A, B, C, or D]." on a new line.
+- State the final answer as a single letter in this exact format: "Therefore, the answer is [A, B, C, or D]." on a new line.
 
 Follow the Response Format exactly as shown:
 
