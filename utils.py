@@ -17,6 +17,7 @@ client = OpenAI(
 system_prompt = """You are an expert medical professional. You are provided with a medical question with multiple answer choices.
 Your goal is to think through the question carefully and explain your reasoning step by step before selecting the final answer.
 Respond only with the reasoning steps and answer as specified below.
+Please make sure your final answer is a single letter indicating the answer choice you selected.
 Below is the format for each question and answer:
 
 Input:
@@ -30,6 +31,7 @@ Therefore, the answer is [final model answer (e.g. A,B,C,D)]"""
 
 system_zero_shot_prompt = """You are an expert medical professional. You are provided with a medical question with multiple answer choices.
 Your goal is to think through the question carefully and respond directly with the answer option.
+Please make sure your final answer is a single letter indicating the answer choice you selected.
 Below is the format for each question and answer:
 
 Input:
