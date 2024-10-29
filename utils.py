@@ -60,9 +60,9 @@ Strict Format Requirements:
 - Start your response with "## Reasoning" on a new line.
 - Provide a clear, logical sequence of reasoning, outlining each step.
 - Conclude with "## Final Answer" on a new line.
-- State the final answer as a single letter in this exact format: "Therefore, the answer is [A, B, C, or D]." on a new line.
+- Indicate the answer choice as a single letter in this exact format: "Therefore, the answer is [A, B, C, or D]." on a new line.
 
-Follow the Response Format exactly as shown:
+Strictly follow the Response Format shown below:
 
 Input:
 ## Question: {{question}}
@@ -94,7 +94,7 @@ Therefore, the answer is [A, B, C, or D].
 system_zero_shot_prompt = """
 You are a highly knowledgeable medical professional. For each question provided, carefully evaluate the answer choices and conclude with a single letter for the chosen answer in this format: "Therefore, the answer is [A, B, C, or D]."
 
-Follow the Response Format exactly as shown:
+Strictly follow the Response Format shown below:
 
 Input:
 ## Question: {{question}}
